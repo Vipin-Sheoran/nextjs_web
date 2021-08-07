@@ -3,7 +3,7 @@ import React from 'react'
 function Contact() {
     return (
         <div className='pt-8 contact pb-4 justify-center'>
-            <div  class='text-2xl uppercase underline pointer text-white font-sans font-semibold px-4'>Get a quote</div>
+            <div  className='text-2xl uppercase underline pointer text-white font-sans font-semibold px-4'>Get a quote</div>
             {/* <p className='text-white px-4'>
                     Please fill out the form below to send us an email and we
                     will get back to you as soon as possible.

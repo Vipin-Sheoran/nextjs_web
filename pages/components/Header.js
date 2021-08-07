@@ -22,20 +22,20 @@ function Header() {
     }
     return (
         <div>
-        <nav class='flex bg-black flex-col md:flex-row p-4 w-100 text-white w-full fixed z-500'>
-           <div class='flex flex-row'>
-           <div class='px-4 text-2xl hover:text-yellow-400 cursor-pointer'> Vipin</div>
-           <div class='md:hidden block  ml-auto' onClick={clickHandler}><MenuIcon/></div>
+        <nav className='flex bg-black flex-col md:flex-row p-4 w-100 text-white w-full fixed z-500'>
+           <div className='flex flex-row'>
+           <div className='px-4 text-2xl hover:text-yellow-400 cursor-pointer'> Vipin</div>
+           <div className='md:hidden block  ml-auto' onClick={clickHandler}><MenuIcon/></div>
            </div>
-           <ul class={hidden}>
-           <a href='#about' onClick={clickHandler}><li class='px-6 md:border-0 cursor-pointer 
-           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span class='hidden md:contents'><HomeIcon/></span><span>Home</span></li></a>
-           <li class='px-6 md:border-0 cursor-pointer
-           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span class='hidden md:contents'><InfoIcon/></span> About me</li>
-           <li class='px-6 md:border-0 cursor-pointer
-           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span class='hidden md:contents'><AccountTreeIcon/></span> Projects</li>
-           <li class='px-6 md:border-0 cursor-pointer
-           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span class='hidden md:contents'><PermContactCalendarIcon/></span> Contact</li>
+           <ul className={hidden}>
+           <a href='#about' onClick={clickHandler}><li className='px-6 md:border-0 cursor-pointer 
+           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span className='hidden md:contents'><HomeIcon/></span><span>Home</span></li></a>
+           <li className='px-6 md:border-0 cursor-pointer
+           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span className='hidden md:contents'><InfoIcon/></span> About me</li>
+           <li className='px-6 md:border-0 cursor-pointer
+           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span className='hidden md:contents'><AccountTreeIcon/></span> Projects</li>
+           <li className='px-6 md:border-0 cursor-pointer
+           border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row'><span className='hidden md:contents'><PermContactCalendarIcon/></span> Contact</li>
            </ul>
        </nav>
        <div className='flex flex-col header pt-16 px-4'>
