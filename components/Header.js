@@ -23,7 +23,7 @@ export default function Header(){
         <nav className='flex bg-black flex-col md:flex-row p-4 w-100 text-white w-full fixed z-50'>
            <div className='flex flex-row'>
            <Link href='/'><div className='px-4 text-xl hover:text-yellow-400 cursor-pointer'> 
-           <Image className='h-10 w-36' src='/sheorancargomoverlogo.png'/></div></Link>
+           <Image height={30} width={108} src='/sheorancargomoverlogo.png'/></div></Link>
            <div className='md:hidden block  ml-auto' onClick={clickHandler}><MenuIcon/></div>
            </div>
            <ul className={hidden}>
