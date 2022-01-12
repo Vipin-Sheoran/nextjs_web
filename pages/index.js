@@ -1,17 +1,18 @@
-import Head from 'next/head'
-import Header from './components/Header'
-import Contact from './components/Contact'
-import About from './components/About'
-import Slider from './components/Slider'
-import Why from './components/Why'
+import Header from '../components/Header'
+import Contact from '../components/contact'
+import About from '../components/homepage/aboutus'
+import Whyus from '../components/homepage/whyus'
+import Bottomwhy from '../components/homepage/bottomwhy'
 export default function Home() {
+
   return (
     <div>
+    
      <Header/>
-     {/* <Slider/> */}
-     <Contact/>   
-     <About/> 
-     <Why/>
+     <Contact/>
+     <About/>
+     <Whyus/>
+     <Bottomwhy/>
     </div>
 
   )
