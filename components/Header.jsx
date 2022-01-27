@@ -7,7 +7,7 @@ import React,{useState} from 'react'
 import Dropdown from './homepage/dropdown'
 import Image from 'next/image'
 
-export default function Header(){
+export default function Header2(){
     const [active,setActive]=useState(false)
     const clickHandler=()=>{
       setActive(!active)
@@ -22,18 +22,18 @@ export default function Header(){
         <div>
         <nav className='flex bg-black flex-col md:flex-row p-4 w-100 text-white w-full fixed z-50'>
            <div className='flex flex-row'>
-           <Link href='/'><div className='px-4 text-xl hover:text-yellow-400 cursor-pointer'> 
-           <Image height={30} width={108} src='/sheorancargomoverlogo.png'/></div></Link>
+           <Link passHref href='/'><div className='px-4 text-xl hover:text-yellow-400 cursor-pointer'> 
+           <Image alt='...loading' height={30} width={108} src='/sheorancargomoverlogo.png'/></div></Link>
            <div className='md:hidden block  ml-auto' onClick={clickHandler}><MenuIcon/></div>
            </div>
            <ul className={hidden}>
-           <Link href='/'><li className='px-6 md:border-0 cursor-pointer 
+           <Link passHref href='/'><li className='px-6 md:border-0 cursor-pointer 
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase'><span className='hidden md:contents'></span><span onClick={()=>setActive(!active)}>Home</span></li></Link>
-           <Link href='about-us'><li className='px-6 md:border-0 cursor-pointer
+           <Link passHref href='about-us'><li className='px-6 md:border-0 cursor-pointer
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase' onClick={()=>setActive(!active)}><span className='hidden md:contents'></span> About us</li></Link>
-           <Link href='/'><li className='px-6 md:border-0 cursor-pointer
+           <Link passHref href='/'><li className='px-6 md:border-0 cursor-pointer
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase'><span className='hidden md:contents'></span><Dropdown/></li></Link>
-           <Link href='contact-us'><li className='px-6 md:border-0 cursor-pointer
+           <Link passHref href='contact-us'><li className='px-6 md:border-0 cursor-pointer
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase' onClick={()=>setActive(!active)}><span className='hidden md:contents'></span>Contact Us</li></Link>
            </ul>
        </nav>

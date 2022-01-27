@@ -24,7 +24,7 @@ function About() {
               As a committed and well-known organization in moving and ...
                  
              </p>
-             <Link href='/about-us'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>know more</button></Link>
+             <Link passHref href='/about-us'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>know more</button></Link>
         </div>
     )
 }
