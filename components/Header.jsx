@@ -29,11 +29,11 @@ export default function Header2(){
            <ul className={hidden}>
            <Link passHref href='/'><li className='px-6 md:border-0 cursor-pointer 
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase'><span className='hidden md:contents'></span><span onClick={()=>setActive(!active)}>Home</span></li></Link>
-           <Link passHref href='about-us'><li className='px-6 md:border-0 cursor-pointer
+           <Link passHref href='/about-us'><li className='px-6 md:border-0 cursor-pointer
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase' onClick={()=>setActive(!active)}><span className='hidden md:contents'></span> About us</li></Link>
            <Link passHref href='/'><li className='px-6 md:border-0 cursor-pointer
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase'><span className='hidden md:contents'></span><Dropdown/></li></Link>
-           <Link passHref href='contact-us'><li className='px-6 md:border-0 cursor-pointer
+           <Link passHref href='/contact-us'><li className='px-6 md:border-0 cursor-pointer
            border-2 border-light-blue-500 border-opacity-75 hover:text-yellow-400 md:py-1 py-4 flex flex-row uppercase' onClick={()=>setActive(!active)}><span className='hidden md:contents'></span>Contact Us</li></Link>
            </ul>
        </nav>

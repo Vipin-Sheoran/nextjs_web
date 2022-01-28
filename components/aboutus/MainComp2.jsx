@@ -1,30 +1,10 @@
-import Header2 from "../components/Header"
-import Footer from "../components/Footer"
-import Clients from "../components/homepage/Clients"
-import Contact from '../components/contact'
-import ServicesOffered from "../components/ServicesOffered/ServicesOffered"
-import WhyChooseUs from "../components/WhyUs/WhyChooseUs"
-import HomeIcon from '@material-ui/icons/Home';
 import SecurityIcon from '@material-ui/icons/Security';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-import TimelapseIcon from '@material-ui/icons/Timelapse';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import AllInboxIcon from '@material-ui/icons/AllInbox';
-import LocalShippingIcon from '@material-ui/icons/LocalShipping';
-import LockIcon from '@material-ui/icons/Lock';
-import Image from "next/dist/client/image"
+import HomeIcon from '@material-ui/icons/Home'
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney'
 
-export default function contactus(){
-    return (
-        <div>
-        <Header2 />
-            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
-            <div className='px-4 md:px-32'>
-                <div className='flex flex-col md:flex-row'>
-                    <div className="flex flex-col md:pr-16 flex_1 pt-8">
-                    <Contact/>
-                    <div className='2nd mt-16'>
-                    <div className='flex flex-row'>
+export default function MainComp2(){
+    return <div className="mt-16">
+        <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><HomeIcon style={{ fontSize: '48px' }} /></div>
                             <div>
                                 <p className='text-bg px-4 mt-4 uppercase'>Simplified process</p>
@@ -54,18 +34,6 @@ export default function contactus(){
                                 </p>
                             </div>
                         </div>
-                            
-                        </div>
                     </div>
-                   
-                    <div className="flex flex-col flex_2 pt-8">
-                    <ServicesOffered/>
-                    <WhyChooseUs/>
-                    </div>
-                </div>
-            </div>
-            <Clients />
-            <Footer />
-        </div>
-    )
+    
 }

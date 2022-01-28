@@ -17,7 +17,7 @@ export default function ServiceProvided(){
             Office shifting requires lots of planning as you have to 
             ensure minimum loss in productivity and service offerings. There are specialist office shifting and relocation...
             </p>
-            <Link passHref href='corporate-relocation'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/corporate-relocation'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
 
 
@@ -31,7 +31,7 @@ export default function ServiceProvided(){
             Household shifting a comfortable and hassle free process by our household shifting service. 
             The household goods shifting service includes shifing of products like furniture...
             </p>
-            <Link passHref href='household-relocation'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/household-relocation'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
 
             <div>
@@ -43,7 +43,7 @@ export default function ServiceProvided(){
             Enhancing strength to our services we also offer warehousing services. We fulfill 
             your warehousing & storage needs. We have warehouses and stores where your goods can...
             </p>
-            <Link passHref href='warehouse'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/warehouse'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
 
             <div>
@@ -55,7 +55,7 @@ export default function ServiceProvided(){
             We have invested a great volume to create a state of art infrastructure, 
             we can accommodate you with any type of carrier wither small or big. Our country wide network has...
             </p>
-            <Link passHref href='vehicle-transportation'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/vehicle-transportation'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
             
             </div>
@@ -70,7 +70,7 @@ export default function ServiceProvided(){
             <p className="overflow-clip px-4 pt-2 txt-col md:w-80">
             We Sheoran International Packers and Movers Ltd, render prompt and expert overseas moving services ...
             </p>
-            <Link passHref href='international-shifting'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/international-shifting'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
 
 
@@ -83,7 +83,7 @@ export default function ServiceProvided(){
             <p className="overflow-clip px-4 pt-2 txt-col md:w-80">
             Enhancing strength to our services we also offer warehousing services. We fulfill your warehousing & storage ...
             </p>
-            <Link passHref href='loading-unloading'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/loading-unloading'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
 
             <div>
@@ -94,7 +94,7 @@ export default function ServiceProvided(){
             <p className="overflow-clip px-4 pt-2 txt-col md:w-80 ">
             Our commercial goods moving services, alike our household services, is inspired by the motto to provide utmost ...
             </p>
-            <Link passHref href='commercial'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
+            <Link passHref href='/services/commercial'><button className='uppercase bt-color text-white px-2 mx-4 py-2 my-2'>read more</button></Link>
             </div>
             </div>
             </div>
