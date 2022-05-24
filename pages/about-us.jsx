@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import HomeIcon from '@material-ui/icons/Home';
 import SecurityIcon from '@material-ui/icons/Security';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
@@ -12,16 +12,37 @@ import Image from 'next/dist/client/image';
 import ServicesOffered from '../components/ServicesOffered/ServicesOffered';
 import Footer from '../components/Footer';
 import Clients from '../components/homepage/Clients';
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import Head from 'next/head'
 function Aboutus() {
+    useEffect(() => {
+        Aos.init({
+          duration:1000
+        })
+       }, [])
     return (
         <div>
+             <Head>
+        <title>About Us</title>
+        <meta
+          name="description"
+          content="Sheoran International Packer and Mover were established in the year 2020 by Praveen Sheoran.
+           We are a leading name in packers and movers industry. 
+          As a dedicated part of service industry we are committed to come up with the best service providers."
+        />
+        <meta name='Keywords'
+        content='movers,packers,praveen sheoran,gurugram,banglore,delhi,Sheoran Cargo Movers & Packers,house shifting ,office relocation
+        ,movers packers near me,best packers and movers gurgaon,best packers and movers from gurgaon to bangalore,best packers and movers gurgaon gurugram haryana,top 5 packers and movers gurgaon,best packers and movers gurugram haryana,top 5 packers and movers in gurgaon,best packers and movers from gurgaon to mumbai'/>
+      </Head>
+
         <Header/>
         <Image className='px-0' width={1600} height={500} src='/sheorancargomover13.jpg'/>
         <div className='px-4 md:px-32'>
             <div className='flex flex-col md:flex-row'>
                 <div className='flex flex-col md:pr-16 flex_1 pt-8'>
                     <div className='main'>
-                        <p className='mt-2 text-2xl uppercase underline pointer text-black font-sans font-semibold px-4'>About us</p>
+                        <p data-aos="fade-right" className='mt-2 text-2xl uppercase underline pointer text-black font-sans font-semibold px-4'>About us</p>
                         <p className="overflow-clip px-4 text-justify pt-6 txt-col">
                             Sheoran International Packer and Mover were established in the year 2020 by Praveen Sheoran.
                             We are a leading name in packers and movers industry. As a dedicated part of service industry we are committed to come up with the best service providers. Our members provide packing, moving of any kind of goods as well as Automobile Transportation , they extend their services in relocating , home based shifting , corporate shifting , door to door cargo shifting.
@@ -48,7 +69,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><HomeIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>Simplified process</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>Simplified process</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                     If you are packing and moving into or out of, a second home or a vacation home - let reliable packers and movers provide the services to ease your packing and moving. Your time is valuable and precious; let us manage your move! We are reliable packers and movers who will manage all your moving processes very carefully and smartly.
                                     We just simplify your move by handling all the packing and moving process from source to destination
@@ -58,7 +79,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><AttachMoneyIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>affordable pricing</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>affordable pricing</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 Every Packers and Movers arranges a pre-move house survey to calculate the volume of your goods, allowing them to provide you with quote for your move. You have to keep in mind that professional movers and packers charge by the weight and volume of your belongings, so it can be difficult to determine if you are already going overboard with your allotted budget. 
                                 Call reliable packers and movers like Alliance logistics for moving at affordable price.
@@ -68,7 +89,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><SecurityIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>Secure packing</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>Secure packing</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 Sheoran International Packer and Mover provides Cardboard carton to wooden crates built with shock absorbers and integral ramps to pack all your valuable items. Our experienced professional team handles all types of packing so that your valuable goods reach destination without any damage. We pack your goods on site or have it packed at our warehouses. We pay strict attention while packing and moving your fragile item from source to destination. 
                                 All Packing materials used are recyclable, so no need to worry about wastage.
@@ -83,11 +104,11 @@ function Aboutus() {
                        <ServicesOffered/>
                         </div>
                     <div className='4th'>
-                    <p className='uppercase text-center text-bg bg-black p-4 text-justify text-white'>why choose us?</p>
+                    <p data-aos="fade-right" className='uppercase text-center text-bg bg-black p-4 text-justify text-white'>why choose us?</p>
                     <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><TimelapseIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>24/7 support</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>24/7 support</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 Our moving and customer care services are open for you all the time.
                                 </p>
@@ -96,7 +117,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><LocationOnIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>AVAILABLE AT YOUR LOCATION</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>AVAILABLE AT YOUR LOCATION</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 We serve over 15 locations across the country and have 15 self-owned, fully computerized branches.
                                 </p>
@@ -105,7 +126,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><AllInboxIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>WORLD CLASS PACKING</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>WORLD CLASS PACKING</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 We are expert in handling, Sheoran International Packer and Mover and packing and shifting of household 
                                 goods, office goods, commercial equipment and car, logistics and transportation.
@@ -115,7 +136,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><LocalShippingIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>QUICK AND FAST DILIVERY</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>QUICK AND FAST DILIVERY</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 We understand that time is precious for you and helps you relocate at the 
                                 earliest and start your new life at your new destination.
@@ -125,7 +146,7 @@ function Aboutus() {
                         <div className='flex flex-row'>
                             <div className='text-red-600 pt-4'><LockIcon style={{ fontSize: '48px' }} /></div>
                             <div>
-                                <p className='text-bg px-4 mt-4 uppercase'>100% safety</p>
+                                <p data-aos="fade-right" className='text-bg px-4 mt-4 uppercase'>100% safety</p>
                                 <p className="overflow-clip px-4 pt-2 txt-col ">
                                 Put your own lock on the cubes/containers and unlock at your end for 100% safety assurance.
                                 </p>

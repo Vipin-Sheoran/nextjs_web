@@ -5,6 +5,7 @@ import MainContent from "../../components/aboutus/MainContent"
 import ServicesOffered from "../../components/ServicesOffered/ServicesOffered"
 import WhyChooseUs from "../../components/WhyUs/WhyChooseUs"
 import Image from "next/dist/client/image"
+import Head from 'next/head'
 
 export default function HouseholdRelocation() {
     const title='HOUSEHOLD RELOCATION'
@@ -15,6 +16,10 @@ export default function HouseholdRelocation() {
     const src='/sheorancargomover6.jpeg'
     return (
         <div>
+            <Head>
+                <meta name="description"
+                content="Household shifting a comfortable and hassle free process by our household shifting service"/>
+            </Head>
             <Header2 />
             <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
             <div className='px-4 md:px-32'>

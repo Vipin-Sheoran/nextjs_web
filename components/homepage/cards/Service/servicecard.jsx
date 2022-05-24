@@ -4,7 +4,7 @@ import PeopleIcon from '@material-ui/icons/People';
 
 export default function ServiceCard(){
     return (
-        <div>
+        <div className='hover:drop-shadow-2xl'>
                 <div className=' text-white font-sans px-4 py-8 text-center vehicles flex flex-row pl-16'>
                     <div>
                     <LocalShippingIcon style={{ fontSize: '48px' }}/>

@@ -5,6 +5,7 @@ import MainContent from "../../components/aboutus/MainContent"
 import ServicesOffered from "../../components/ServicesOffered/ServicesOffered"
 import WhyChooseUs from "../../components/WhyUs/WhyChooseUs"
 import Image from "next/dist/client/image"
+import Head from 'next/head'
 
 export default function OfficeRelocation() {
     const title='COMMERCIAL GOODS'
@@ -15,6 +16,13 @@ export default function OfficeRelocation() {
     const src='/sheorancargomover11.png'
     return (
         <div>
+            <Head>
+                <meta name="description"
+                content="Our commercial goods moving services, alike our household services, 
+                is inspired by the motto to provide utmost customer satisfaction"></meta>
+                <meta name="keywords"
+                content="commercial shifting,best shifting,commercial gurgaon"/>
+            </Head>
             <Header2 />
             <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
             <div className='px-4 md:px-32'>
