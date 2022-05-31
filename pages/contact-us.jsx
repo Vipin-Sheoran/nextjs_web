@@ -13,10 +13,23 @@ import AllInboxIcon from '@material-ui/icons/AllInbox';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import LockIcon from '@material-ui/icons/Lock';
 import Image from "next/dist/client/image"
+import Head from 'next/head'
 
 export default function contactus(){
     return (
         <div>
+            <Head>
+        <title>Contact Us</title>
+        <meta
+          name="description"
+          content="Sheoran International Packer and Mover were established in the year 2020 by Praveen Sheoran.
+           We are a leading name in packers and movers industry. 
+          As a dedicated part of service industry we are committed to come up with the best service providers."
+        />
+        <meta name='Keywords'
+        content='movers,packers,praveen sheoran,gurugram,banglore,delhi,Sheoran Cargo Movers & Packers,house shifting ,office relocation
+        ,movers packers near me,best packers and movers gurgaon,best packers and movers from gurgaon to bangalore,best packers and movers gurgaon gurugram haryana,top 5 packers and movers gurgaon,best packers and movers gurugram haryana,top 5 packers and movers in gurgaon,best packers and movers from gurgaon to mumbai'/>
+      </Head>
         <Header2 />
             <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
             <div className='px-4 md:px-32'>
