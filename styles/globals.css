@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -29,11 +30,24 @@ a {
 }
 @keyframes slide{
   0%{
-    width: 0;
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
   }
   100%{
+    opacity: 0;
+  }
+  /* 0%{
+    width: 0%;
+  }
+  50%{
     width: 100%;
   }
+  100%{
+    width: 0%;
+  } */
+  
 }
 .contact{
   background-color: #282b2d;
@@ -107,7 +121,10 @@ a {
 .whatsapp-icon {
   margin-top: 16px;
 }
-
+.topbar{
+  background:no-repeat  url("https://www.arrowpackers.com/images/main-slider/transportation.jpg") ;
+  background-size: cover;
+}
 /* for mobile */
 @media screen and (max-width: 767px) {
   .whatsapp-icon {

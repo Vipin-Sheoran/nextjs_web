@@ -1,6 +1,7 @@
 import Header2 from '../components/Header'
 import Contact from '../components/contact'
-import About from '../components/homepage/aboutus'
+// import About from '../components/homepage/aboutus'
+import About from '../components/homepage/About'
 import Whyus from '../components/homepage/whyus'
 import Bottomwhy from '../components/homepage/bottomwhy'
 import Services from '../components/homepage/Services'
@@ -43,10 +44,12 @@ export default function Home() {
       </a>
      <Header2/>
      <Carousel/>
-     <Contact/>
+     {/* <Contact/> */}
      <About/>
-     <Whyus/>
+     <hr/>
+     {/* <Whyus/> */}
      <Bottomwhy/>
+     <hr/>
      <Services/>
      <Testimonials/>
      <Clients/>

@@ -39,13 +39,70 @@ export default function Contact(){
 
     return(
 
-        <div className='pt-8 contact pb-4 justify-center'>
-       <div className='md:ml-60 md:mr-60'>
+        <div className='bg-gray-300 pt-6 pb-8 rounded-r-md drop-shadow-2xl'>
+       {/* <div className='p-4'> */}
        
         
-        <div data-aos="fade-right" className='text-2xl uppercase underline pointer text-white font-sans font-semibold px-4'>Get a quote</div>
+        <div data-aos="fade-right" className='text-3xl uppercase pointer font-sans font-extrabold px-8 '>Get a quote</div>
         <form className='px-4' onSubmit={sendEmail}>
-        <div className='flex flex-col'>
+          <div className='flex flex-col'>
+            <div className='flex flex-col md:flex-row w-full'>
+            <input
+                    
+                    type="text"
+                     className="p-2 flex-1 m-4 border-2"
+                    placeholder="Name"
+                    required="required"
+                    name='name'
+                  />
+                  <input
+                    onChange={(e)=>setNumber(e.target.value)}
+                    // onChange={(e)=>phoneHandler(e)}
+                      type="text"
+                      id="phone"
+                       className="p-2 flex-1 m-4 border-2"
+                      placeholder="Phone No."
+                      required="required"
+                      name='phone'
+                    />
+            </div>
+            <div className='flex flex-col md:flex-row'>
+            <input
+                    // onChange={(e)=>phoneHandler(e)}
+                      type="text"
+                      id="phone"
+                       className="p-2 flex-1 m-4 border-2"
+                      placeholder="Address"
+                      required="required"
+                      name='address'
+                    />
+                    <input
+                    onChange={(e)=>setEmail(e.target.value)}
+                      type="email"
+                      id="email"
+                       className="p-2 flex-1 m-4 border-2"
+                      placeholder="Email"
+                      required="required"
+                      name='email'
+                      
+                    />
+            </div>
+            <div className='m-4'>
+            <textarea
+                //  onChange={(e)=>messageHandler(e)}
+                  name="message"
+                  id="message"
+                   className="w-full p-4 border-2"
+                //   rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                
+            </div>
+            <button className='border-2 bg-indigo-600 rounded-lg p-2 mx-4 rounded-md hover:bg-indigo-500 font-bold text-white'>SEND</button>
+          </div>
+          
+        {/* <div className='flex flex-col'>
                 <div className='flex flex-col  mr-0'>
                   <input
                     
@@ -102,9 +159,9 @@ export default function Contact(){
                 <button className='text-white border-2 border-black rounded-lg py-2 hover:bg-yellow-800'>Send Request</button>
               
                 </div>
-                      </div>
+                      </div> */}
         </form>
-      </div>
+      {/* </div> */}
     </div>
 
     )

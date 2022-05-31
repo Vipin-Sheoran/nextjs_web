@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState,useRef} from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/dist/client/image';
@@ -6,22 +6,54 @@ import Aos from "aos";
 import 'aos/dist/aos.css'
 
 export default function Carousel1() {
+  const [index,setIndex]=useState(0)
+  const intervalRef=useRef(null)
+ const words=["Cheap & Safe","Fast & Easy"]
 
-    return <div>
-        <Carousel autoPlay={true} infiniteLoop={true} autoFocus={true} showStatus={false} axis='horizontal' showThumbs={false} showIndicators={false}>
+ const change=()=>{
+     setIndex(index+1)
+ }
+
+useEffect(()=>{
+ if((words.length-1)!==index){
+     intervalRef.current=setInterval(change,3000)
+ }else{
+     intervalRef.current=setInterval(()=>setIndex(0),3000)
+ }
+ return ()=>{
+     clearInterval(intervalRef.current)
+ }
+},[index])
+console.log(index)
+    return <div className='topbar pt-32 pb-20 '>
+        {/* <Carousel autoPlay={true} infiniteLoop={true} autoFocus={true} showStatus={false} axis='horizontal' showThumbs={false} showIndicators={false}>
             
-            <div>
-                <Image width={1600} height={800} src="/sheorancargomover1.jpg" />
-                <div className="absolute txt-black top-1/2 top-3.5/4 md:inset-x-1/3 text-blue-500 mx-6 md:mx-0">
-                    <p className='bg-black bg-opacity-70 border-blue-900 border-2 md:bg-opacity-80 p-0.5 rounded-lg md:p-4 uppercase text-base md:text-6xl md:font-extrabold'>household relocation</p>
+            <div> */}
+            {/* <div className='opacity-80 hidden md:block'>
+            <Image layout="responsive" objectFit="cover" width={1600} height={620} src="/sheorancargomover3.jpg" />
+            </div>
+            <div className='opacity-80 block md:hidden'>
+            <Image layout="responsive" objectFit="cover" width={1600} height={1100} src="/sheorancargomover3.jpg" />
+            </div>
+                 */}
+                {/* <div className="absolute txt-black top-1/2 top-3.5/4 md:inset-x-1/3 text-blue-500 mx-6 md:mx-0">
+                    <p className='bg-black bg-opacity-70 border-blue-900 border-2 md:bg-opacity-80 p-0.5 rounded-lg md:p-4 uppercase text-base md:text-6xl md:font-extrabold'>We make moving {words[index]}</p>
                     <p className='bg-black bg-opacity-70 border-blue-900 border-2 md:bg-opacity-80 p-0.5 rounded-lg md:p-4 mt-2 text-sm md:text-3xl'>
                     Household shifting a comfortable and hassle free process by our household shifting service.
                     </p>
                     <button className='uppercase hover:bg-yellow-400 hover:bg-opacity-80 m-auto hidden md:block mt-2 py-2 px-6 rounded-lg border-blue-900 border-2 bg-black bg-opacity-70 md:bg-opacity-80 font-semibold text-white'>know more</button>
+                </div> */}
+                <div className='mx-2 md:space-y-2 text-center md:text-left bg-white bg-opacity-50 p-8'>
+                  <p className='text-[#182937] text-lg md:text-2xl font-bold'>PROVIDE BEST MOVING SERVICE</p>
+                  <p className='text-indigo-700 text-2xl md:text-6xl font-extrabold'>We Make Moving</p>
+                  <p className='text-indigo-700 text-2xl md:text-6xl font-extrabold truncate ease-linear text-clip'>{words[index]}</p>
+                  <p className='md:font-bold md:text-xl text-md font-medium'>We make shifting a comfortable and hassle </p>
+                  <p className='md:font-bold md:text-xl text-md font-medium'>free process by our overall shifting services.</p>
+                  <button className='bg-yellow-400 p-2 mt-2 font-bold text-white rounded-md hover:bg-yellow-300'>GET STARTED</button>
                 </div>
 
             </div>
-            <div>
+            {/* <div>
                 <Image width={1600} height={800} src="/sheorancargomover20.jpg" />
                 <div className="absolute txt-black top-1/2 top-3.5/4 md:inset-x-1/3 text-blue-500 mx-6 md:mx-0">
                     <p className='bg-black bg-opacity-70 border-blue-900 border-2 md:bg-opacity-80 p-0.5 rounded-lg md:p-4 uppercase text-base md:text-6xl md:font-extrabold'>household relocation</p>
@@ -42,8 +74,8 @@ export default function Carousel1() {
                     <button className='uppercase hover:bg-yellow-400 hover:bg-opacity-80 m-auto hidden md:block mt-2 py-2 px-6 rounded-lg border-blue-900 border-2 bg-black bg-opacity-70 md:bg-opacity-80 font-semibold text-white'>know more</button>
                 </div>
 
-            </div>
-        </Carousel>
-    </div>;
+            </div> */}
+    //     </Carousel>
+    // </div>;
 }
 

@@ -39,20 +39,20 @@ export default function Header2(){
        </nav>
        
        
-       <div className='flex flex-col header place-content-between pt-20 px-4 md:flex-row'>
-           
+       {/* <div className='flex flex-col header place-content-between pt-20 px-4 md:flex-row'> */}
+{/*            
 
            <div className='text-white py-2 md:px-16 '><span><PhoneIcon/></span><a href="tel:+9870105680">+91 9870105680</a></div>
            <div className='text-white py-2 md:px-16 '><span><PhoneIcon/></span><a href="tel:+9870105680">+91 9870285680</a></div>
             <div className='text-white py-2 md:px-16'><span><MailIcon/></span>  sheorancargomover@gmail.com</div>
            
           
-          <div className='text-white py-2 md:px-16'><span><PaymentIcon/></span>  Payment</div>
+          <div className='text-white py-2 md:px-16'><span><PaymentIcon/></span>  Payment</div> */}
             {/* <div className='text-white py-2 md:px-16'><span><ForumIcon/></span>  Have a chat</div> */}
 
           
             
-        </div>
+        {/* </div> */}
         </div>
     )
 }
