@@ -19,7 +19,7 @@ export default function InternationalShifting() {
                 content="We Sheoran International Packers and Movers Ltd, render prompt and expert overseas moving services with a tinge of uniqueness..."/>
             </Head>
             <Header2 />
-            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
+            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' alt="international-shifting"/>
             <div className='px-4 md:px-32'>
                 <div className='flex flex-col md:flex-row'>
                     <div className="flex flex-col md:pr-16 flex_1 pt-8">

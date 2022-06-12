@@ -31,7 +31,7 @@ export default function contactus(){
         ,movers packers near me,best packers and movers gurgaon,best packers and movers from gurgaon to bangalore,best packers and movers gurgaon gurugram haryana,top 5 packers and movers gurgaon,best packers and movers gurugram haryana,top 5 packers and movers in gurgaon,best packers and movers from gurgaon to mumbai'/>
       </Head>
         <Header2 />
-            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
+            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' alt="contact-us"/>
             <div className='px-4 md:px-32'>
                 <div className='flex flex-col md:flex-row'>
                     <div className="flex flex-col md:pr-16 flex_1 pt-8">

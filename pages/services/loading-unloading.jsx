@@ -21,7 +21,7 @@ export default function LoadingUnloading() {
                 content=""/>
             </Head>
             <Header2 />
-            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' />
+            <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' alt="loading-unloading"/>
             <div className='px-4 md:px-32'>
                 <div className='flex flex-col md:flex-row'>
                     <div className="flex flex-col md:pr-16 flex_1 pt-8">

@@ -9,10 +9,10 @@ function ContactCard() {
                <p className='text-2xl semibold text-white pt-2 pb-8 md:text-center'>Shifting-Domestic & International</p>
 
                <div className=''>
-               <div className=' h-20 w-20 rounded-full bg-white ring-4 ring-yellow-500 pl-4 pt-6 mb-4 m-auto text-red-500'>
+               <div href="tel:+9870285680" className=' h-20 w-20 rounded-full bg-white ring-4 ring-yellow-500 pl-4 pt-6 mb-4 m-auto text-red-500'>
                <PhoneInTalkIcon  style={{ fontSize: '48px' }}/>
             </div>
-            <div data-aos='fade-right' className='text-2xl semibold text-white pt-2 pb-8 text-center'>+91 9870285680</div></div>
+            <a href="tel:+9870285680" data-aos='fade-right' className='text-2xl semibold text-white pt-2 pb-8 text-center cursor-pointer'>+91 9870285680</a></div>
             </div>
         </div>
     )
