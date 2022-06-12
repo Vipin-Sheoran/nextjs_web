@@ -13,7 +13,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover2.jpg'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>CORPORATE RELOCATION</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>CORPORATE RELOCATION</h1>
             <p className="pt-2 txt-col font-medium">
             Office shifting requires lots of planning as you have to 
             ensure minimum loss in productivity and service offerings. There are specialist office shifting and...
@@ -27,7 +27,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover19.jpg'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>HOUSE RELOCATION</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>HOUSE RELOCATION</h1>
             <p className="pt-2 txt-col font-medium">
             Household shifting a comfortable and hassle free process by our household shifting service. 
             The household goods shifting service includes ...
@@ -39,7 +39,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover20.jpg'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>WAREHOUSE/STORAGE</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>WAREHOUSE/STORAGE</h1>
             <p className="pt-2 txt-col font-medium ">
             Enhancing strength to our services we also offer warehousing services. We fulfill 
             your warehousing & storage needs. We have warehouses...
@@ -51,7 +51,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover21.jpg'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>VEHICLE TRANSPORTATION</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>VEHICLE TRANSPORTATION</h1>
             <p className="pt-2 txt-col font-medium">
             We have invested a great volume to create a state of art infrastructure, 
             we can accommodate you with any type of carrier wither small...
@@ -77,7 +77,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover14.jpg'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>INTERNATIONAL SHIFTING</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>INTERNATIONAL SHIFTING</h1>
             <p className="pt-2 txt-col font-medium">
             We Sheoran International Packers and Movers Ltd, render prompt and expert overseas moving services over...
             </p>
@@ -100,7 +100,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover10.jpg'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>LOADING UNLOADING</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>LOADING UNLOADING</h1>
             <p className="pt-2 txt-col font-medium">
             Enhancing strength to our services we also offer warehousing services. We fulfill your warehousing & storage ...
             </p>
@@ -122,7 +122,7 @@ export default function ServiceProvided(){
             <div className='pt-4'>
             <Image alt='...loading' width={260} height={150} layout='responsive' src='/sheorancargomover11.png'/>
             </div>
-            <p data-aos='fade-right' className='text-bg mt-4 font-bold '>COMMERCIAL SHIFTING</p>
+            <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>COMMERCIAL SHIFTING</h1>
             <p className="pt-2 txt-col font-medium">
             Our commercial goods moving services, alike our household services, is inspired by the motto to provide utmost ...
             </p>

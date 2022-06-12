@@ -10,20 +10,6 @@ export default function Carousel1() {
   const intervalRef=useRef(null)
  const words=["Cheap & Safe","Fast & Easy"]
 
- const change=()=>{
-     setIndex(index+1)
- }
-
-useEffect(()=>{
- if((words.length-1)!==index){
-     intervalRef.current=setInterval(change,3000)
- }else{
-     intervalRef.current=setInterval(()=>setIndex(0),3000)
- }
- return ()=>{
-     clearInterval(intervalRef.current)
- }
-},[index])
 console.log(index)
     return <div className='topbar pt-32 pb-20 '>
         {/* <Carousel autoPlay={true} infiniteLoop={true} autoFocus={true} showStatus={false} axis='horizontal' showThumbs={false} showIndicators={false}>
@@ -44,7 +30,7 @@ console.log(index)
                     <button className='uppercase hover:bg-yellow-400 hover:bg-opacity-80 m-auto hidden md:block mt-2 py-2 px-6 rounded-lg border-blue-900 border-2 bg-black bg-opacity-70 md:bg-opacity-80 font-semibold text-white'>know more</button>
                 </div> */}
                 <div className='mx-2 md:space-y-2 text-center md:text-left bg-white bg-opacity-50 p-8'>
-                  <p className='text-[#182937] text-lg md:text-2xl font-bold'>PROVIDE BEST MOVING SERVICE</p>
+                  <h1 className='text-[#182937] text-lg md:text-2xl font-bold'>PROVIDE BEST MOVING SERVICE</h1>
                   <p className='text-indigo-700 text-2xl md:text-6xl font-extrabold'>We Make Moving</p>
                   <p className='text-indigo-700 text-2xl md:text-6xl font-extrabold truncate ease-linear text-clip'>{words[index]}</p>
                   <p className='md:font-bold md:text-xl text-md font-medium'>We make shifting a comfortable and hassle </p>
