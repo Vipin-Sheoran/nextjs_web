@@ -17,6 +17,7 @@ export default function HouseholdRelocation() {
     return (
         <div>
             <Head>
+            <meta name="robots" content="all" />
                 <meta name="description"
                 content="Household shifting a comfortable and hassle free process by our household shifting service"/>
             </Head>

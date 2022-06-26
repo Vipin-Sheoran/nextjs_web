@@ -25,6 +25,7 @@ function Aboutus() {
         <div>
              <Head>
         <title>About Us</title>
+        <meta name="robots" content="all" />
         <meta
           name="description"
           content="Sheoran International Packer and Mover were established in the year 2020 by Praveen Sheoran.

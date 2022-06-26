@@ -1,0 +1,15 @@
+   <!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+       <url><loc>https://sheorancargomover.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/about-us</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/contact-us</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/commercial</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/corporate-relocation</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/household-relocation</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/international-shifting</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/loading-unloading</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/vehicle-transportation</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+       <url><loc>https://sheorancargomover.com/services/warehouse</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-06-22T11:26:27.391Z</lastmod></url>
+   </urlset>
+   </xml>

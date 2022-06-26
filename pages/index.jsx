@@ -19,8 +19,9 @@ export default function Home() {
       <title>Sheoran International Packers and Movers</title>
         <meta
           name="description"
-          content="Sheoran International Packers and Movers have established ourselves as a leading company in the field of Packing & Moving offering exclusive and unique USPs. We serve over 15 locations across the country and have 15 self-owned, fully computerized branches. These branches are completely inter-connected in order to keep a track of the status of your valuable goods from the time of loading till delivery"
+          content="Sheoran International Packers and Movers have established ourselves as a leading company in the field of Packing & Moving offering exclusive and unique USPs. We serve over 15 locations across the country and have 15 self-owned, fully computerized branches."
         />
+        <meta name="robots" content="all" />
         <meta name='keywords'
         content='best packers and movers gurgaon,
         best packers and movers from gurgaon to bangalore,
