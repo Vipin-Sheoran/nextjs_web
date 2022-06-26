@@ -15,6 +15,7 @@ export default function InternationalShifting() {
     return (
         <div>
             <Head>
+            <meta name="robots" content="all" />
                 <meta name="description"
                 content="We Sheoran International Packers and Movers Ltd, render prompt and expert overseas moving services with a tinge of uniqueness..."/>
             </Head>

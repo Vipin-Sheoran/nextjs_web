@@ -22,6 +22,7 @@ export default function OfficeRelocation() {
                 is inspired by the motto to provide utmost customer satisfaction"></meta>
                 <meta name="keywords"
                 content="commercial shifting,best shifting,commercial gurgaon"/>
+                <meta name="robots" content="all" />
             </Head>
             <Header2 />
             <Image width={1600} height={500} className='px-0' src='/sheorancargomover13.jpg' alt="commercial"/>

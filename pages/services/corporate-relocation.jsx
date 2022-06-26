@@ -17,6 +17,7 @@ export default function CorporateRelocation() {
     return (
         <div>
             <Head>
+            <meta name="robots" content="all" />
                 <meta name="description"
                 content="Our time cautious and hassle free services in job related moving has often been appreciated by the industry"/>
             </Head>

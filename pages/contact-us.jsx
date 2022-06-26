@@ -20,6 +20,7 @@ export default function contactus(){
         <div>
             <Head>
         <title>Contact Us</title>
+        <meta name="robots" content="all" />
         <meta
           name="description"
           content="Sheoran International Packer and Mover were established in the year 2020 by Praveen Sheoran.

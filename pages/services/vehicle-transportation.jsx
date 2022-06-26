@@ -17,6 +17,7 @@ export default function VehicleTransportation() {
     return (
         <div>
             <Head>
+            <meta name="robots" content="all" />
                 <meta name="description"
                 content="We conquer car transportation with a ready fleet of more than 70 self-owned, customized Car Carriers..."/>
             </Head>

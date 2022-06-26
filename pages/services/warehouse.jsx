@@ -17,6 +17,7 @@ export default function Warehouse() {
     return (
         <div>
             <Head>
+            <meta name="robots" content="all" />
                 <meta name="description"
                 content="We have provided warehousing facility to various offices, online-shopping businesses, retail stores, wholesalers and corporate hubs..."/>
             </Head>
