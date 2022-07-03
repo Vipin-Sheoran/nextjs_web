@@ -4,6 +4,7 @@ import validateEmail from 'js-email-validator'
 import validatePhoneNumber from 'validate-phone-number-node-js'
 import Aos from "aos";
 import 'aos/dist/aos.css'
+import swal from 'sweetalert'
 
 export default function Contact(){
 
@@ -23,8 +24,10 @@ export default function Contact(){
       emailjs.sendForm('service_mdalbj7', 'template_b2wxs1l', e.target,"user_mewmQVyqtzhHJ8TVgSqGk")
       .then(function(response) {
          console.log('SUCCESS!', response.status, response.text);
+         swal("", "Thanks for the submission.We will get back to you soon!", "success")
       }, function(error) {
          console.log('FAILED...', error);
+         swal("", `${error}`, "error")
       });
       e.target.reset()
      }else{
@@ -52,7 +55,7 @@ export default function Contact(){
                     type="text"
                      className="p-2 flex-1 m-4 border-2"
                     placeholder="Name"
-                    required="required"
+                    required
                     name='name'
                   />
                   <input
@@ -62,7 +65,7 @@ export default function Contact(){
                       id="phone"
                        className="p-2 flex-1 m-4 border-2"
                       placeholder="Phone No."
-                      required="required"
+                      required
                       name='phone'
                     />
             </div>
@@ -73,7 +76,7 @@ export default function Contact(){
                       id="phone"
                        className="p-2 flex-1 m-4 border-2"
                       placeholder="Address"
-                      required="required"
+                      required
                       name='address'
                     />
                     <input
@@ -82,9 +85,28 @@ export default function Contact(){
                       id="email"
                        className="p-2 flex-1 m-4 border-2"
                       placeholder="Email"
-                      required="required"
+                      required
                       name='email'
                       
+                    />
+            </div>
+            <div className='flex flex-col md:flex-row required'>
+            
+                    <input
+                      type="from"
+                      id="email"
+                       className="p-2 flex-1 m-4 border-2"
+                      placeholder="Service From"
+                      required
+                      name='from'         
+                    />
+                    <input
+                      type="text"
+                      id="to"
+                       className="p-2 flex-1 m-4 border-2 "
+                      placeholder="Service To"
+                      required
+                      name='to'
                     />
             </div>
             <div className='m-4'>
@@ -95,7 +117,6 @@ export default function Contact(){
                    className="w-full p-4 border-2"
                 //   rows="4"
                   placeholder="Message"
-                  required
                 ></textarea>
                 
             </div>
@@ -109,7 +130,7 @@ export default function Contact(){
                       type="text"
                        className="my-4 py-2 px-2 "
                       placeholder="Name"
-                      required="required"
+                      required
                       name='name'
                     />
                     <input
@@ -119,7 +140,7 @@ export default function Contact(){
                       id="phone"
                        className="my-4 py-2 px-2"
                       placeholder="Phone No."
-                      required="required"
+                      required
                       name='phone'
                     />
 
@@ -131,7 +152,7 @@ export default function Contact(){
                       id="phone"
                        className="my-4 py-2 px-2"
                       placeholder="Address"
-                      required="required"
+                      required
                       name='address'
                     />
                     
@@ -141,7 +162,7 @@ export default function Contact(){
                       id="email"
                        className="my-4 py-2 px-2"
                       placeholder="Email"
-                      required="required"
+                      required
                       name='email'
                       
                     />

@@ -4,7 +4,7 @@ import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
 function ContactCard() {
     return (
         <div>
-            <div className='clients-bg p-4'>
+            <div className='clients-bg p-4 text-center'>
                <p className='text-white text-xl md:text-center'>If You Have Any Moveing Need, Simply Call Us 24 Hour Available</p>
                <p className='text-2xl semibold text-white pt-2 pb-8 md:text-center'>Shifting-Domestic & International</p>
 

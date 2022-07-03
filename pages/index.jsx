@@ -19,7 +19,9 @@ export default function Home() {
       <title>Sheoran International Packers and Movers</title>
         <meta
           name="description"
-          content="Sheoran International Packers and Movers have established ourselves as a leading company in the field of Packing & Moving offering exclusive and unique USPs. We serve over 15 locations across the country and have 15 self-owned, fully computerized branches."
+          content="Sheoran International Packers and Movers have established ourselves as a 
+          leading company in the field of Packing & Moving offering exclusive and unique USPs. 
+          We serve over 15 locations across the country and have 15 self-owned, fully computerized branches."
         />
         <meta name="robots" content="all" />
         <meta name='keywords'
@@ -37,14 +39,6 @@ export default function Home() {
         dlf phase 2 gurgaon, golf course road gurgaon,  Nirvana Country gurgaon, South City 1 gurgaon , 
         South City 2 gurgaon, dlf City gurgaon, Sushant lock gurgaon,  suncity gurgaon,  Central park sohna road gurgaon'/>
       </Head>
-    <a
-        href="https://wa.me/+919870285680"
-        className="whatsapp_float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fa fa-whatsapp whatsapp-icon"></i>
-      </a>
      <Header2/>
      <Carousel/>
      {/* <Contact/> */}
