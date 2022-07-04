@@ -47,23 +47,24 @@ export default function Contact(){
        
         
         <div data-aos="fade-right" className='text-3xl uppercase pointer font-sans font-extrabold px-8 '>Get a quote</div>
-        <form className='md:px-4 px-2' onSubmit={sendEmail}>
+        <form className='md:px-4 px-2' onSubmit={sendEmail} autocomplete="off">
           <div className='flex flex-col'>
             <div className='flex flex-col md:flex-row w-full'>
             <input
                     
                     type="text"
-                     className="p-2 flex-1 m-4 border-2"
+                     className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                     placeholder="Name"
                     required
                     name='name'
+                    autocomplete="false"
                   />
                   <input
                     onChange={(e)=>setNumber(e.target.value)}
                     // onChange={(e)=>phoneHandler(e)}
                       type="text"
                       id="phone"
-                       className="p-2 flex-1 m-4 border-2"
+                       className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                       placeholder="Phone No."
                       required
                       name='phone'
@@ -74,7 +75,7 @@ export default function Contact(){
                     // onChange={(e)=>phoneHandler(e)}
                       type="text"
                       id="phone"
-                       className="p-2 flex-1 m-4 border-2"
+                       className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                       placeholder="Address"
                       required
                       name='address'
@@ -83,19 +84,19 @@ export default function Contact(){
                     onChange={(e)=>setEmail(e.target.value)}
                       type="email"
                       id="email"
-                       className="p-2 flex-1 m-4 border-2"
+                       className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                       placeholder="Email"
                       required
                       name='email'
                       
                     />
             </div>
-            <div className='flex flex-col md:flex-row required'>
+            <div className='flex flex-col md:flex-row'>
             
                     <input
                       type="from"
                       id="email"
-                       className="p-2 flex-1 m-4 border-2"
+                       className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                       placeholder="Service From"
                       required
                       name='from'         
@@ -103,7 +104,7 @@ export default function Contact(){
                     <input
                       type="text"
                       id="to"
-                       className="p-2 flex-1 m-4 border-2 "
+                       className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                       placeholder="Service To"
                       required
                       name='to'
@@ -114,13 +115,13 @@ export default function Contact(){
                 //  onChange={(e)=>messageHandler(e)}
                   name="message"
                   id="message"
-                   className="w-full p-4 border-2"
+                   className="w-full p-4 border-2 text-indigo-600 font-bold"
                 //   rows="4"
                   placeholder="Message"
                 ></textarea>
                 
             </div>
-            <button className='border-2 bg-indigo-600 rounded-lg p-2 mx-4 rounded-md hover:bg-indigo-500 font-bold text-white'>SEND</button>
+            <button className='border-2 bg-indigo-600 p-2 mx-4 rounded-md hover:bg-gray-800 font-bold text-white transition-all duration-300'>SEND</button>
           </div>
           
         {/* <div className='flex flex-col'>
