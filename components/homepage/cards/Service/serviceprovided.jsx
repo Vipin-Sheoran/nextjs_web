@@ -16,7 +16,7 @@ export default function ServiceProvided(){
             <h1 data-aos='fade-right' className='text-bg mt-4 font-bold '>CORPORATE RELOCATION</h1>
             <p className="pt-2 txt-col font-medium">
             Office shifting requires lots of planning as you have to 
-            ensure minimum loss in productivity and service offerings. There are specialist office shifting and...
+            ensure minimum loss in productivity and service offerings. There...
             </p>
             <Link passHref href='/services/corporate-relocation'><button className='uppercase bg-indigo-600 rounded-md font-bold hover:bg-indigo-500 text-white px-2 py-2 my-4 w-full'>read more</button></Link>
             </div>

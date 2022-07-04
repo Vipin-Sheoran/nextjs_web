@@ -4,13 +4,15 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/dist/client/image';
 import Aos from "aos";
 import 'aos/dist/aos.css'
+import Link from 'next/link';
 
 export default function Carousel1() {
-  const [index,setIndex]=useState(0)
-  const intervalRef=useRef(null)
- const words=["Cheap & Safe","Fast & Easy"]
+    useEffect(() => {
+        Aos.init({
+          duration:1000
+        })
+       }, [])
 
-console.log(index)
     return <div className='topbar pt-32 pb-20 '>
         {/* <Carousel autoPlay={true} infiniteLoop={true} autoFocus={true} showStatus={false} axis='horizontal' showThumbs={false} showIndicators={false}>
             
@@ -31,11 +33,11 @@ console.log(index)
                 </div> */}
                 <div className='mx-2 md:space-y-2 text-center md:text-left bg-white bg-opacity-50 p-8'>
                   <h1 className='text-[#182937] text-lg md:text-2xl font-bold'>PROVIDE BEST MOVING SERVICE</h1>
-                  <p className='text-indigo-700 text-2xl md:text-6xl font-extrabold'>We Make Moving</p>
-                  <p className='text-indigo-700 text-2xl md:text-6xl font-extrabold truncate ease-linear text-clip'>{words[index]}</p>
-                  <p className='md:font-bold md:text-xl text-md font-medium'>We make shifting a comfortable and hassle </p>
-                  <p className='md:font-bold md:text-xl text-md font-medium'>free process by our overall shifting services.</p>
-                  <button className='bg-yellow-400 p-2 mt-2 font-bold text-white rounded-md hover:bg-yellow-300'>GET STARTED</button>
+                  <p data-aos="fade-right" className='text-indigo-700 text-2xl md:text-6xl font-extrabold'>Sheoran International Packers</p>
+                  <p data-aos="fade-right" className='text-indigo-700 text-2xl md:text-6xl font-extrabold truncate ease-linear text-clip'>And Movers</p>
+                  <p className='md:font-bold md:text-xl text-md font-medium'>We make shifting a comfortable and hassle free process by our overall shifting services.</p>
+                  {/* <p className='md:font-bold md:text-xl text-md font-medium'>free process by our overall shifting services.</p> */}
+                  <Link href={`/contact-us`} passHref><button className='bg-yellow-400 p-2 mt-2 font-bold text-white rounded-md hover:bg-yellow-300'>GET STARTED</button></Link>
                 </div>
 
             </div>
