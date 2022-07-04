@@ -47,7 +47,7 @@ export default function Contact(){
        
         
         <div data-aos="fade-right" className='text-3xl uppercase pointer font-sans font-extrabold px-8 '>Get a quote</div>
-        <form className='md:px-4 px-2' onSubmit={sendEmail} autocomplete="off">
+        <form className='md:px-4 px-2' onSubmit={sendEmail}>
           <div className='flex flex-col'>
             <div className='flex flex-col md:flex-row w-full'>
             <input
@@ -57,7 +57,6 @@ export default function Contact(){
                     placeholder="Name"
                     required
                     name='name'
-                    autocomplete="false"
                   />
                   <input
                     onChange={(e)=>setNumber(e.target.value)}
