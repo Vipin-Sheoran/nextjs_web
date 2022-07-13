@@ -10,7 +10,7 @@ function GetInTouch() {
             Bangalore - 560022</p>
 
             <p className='uppercase text-white text-xl font-semibold text-yellow-600'>SHEORAN INTERNATIONAL PACKER & MOVER</p>
-            <p className='text-white text-gray-400'>951/10, satguru Enclave, opposite to maruti Gate number 1,old delhi Road gurgaon, Gurgaon</p>
+            <p className='text-white text-gray-400'>Plot No. 39, Sheetla mata road behind bharat petrol pump, Sector 5, Gurugram</p>
             <div className='flex flex-col pb-2'>
             <p className='text-white text-gray-400'>info@sheorancargomover.com</p>
             <p className='text-white text-gray-400'>sheorancargomover@gmail.com</p>

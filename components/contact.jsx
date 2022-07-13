@@ -51,7 +51,6 @@ export default function Contact(){
           <div className='flex flex-col'>
             <div className='flex flex-col md:flex-row w-full'>
             <input
-                    
                     type="text"
                      className="p-2 flex-1 m-4 border-2 text-indigo-600 font-bold"
                     placeholder="Name"
